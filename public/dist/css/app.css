@@ -1,0 +1,62 @@
+* {
+  font-family: "Open Sans", sans-serif;
+  color: #555;
+}
+
+h4 {
+  font-weight: 600;
+  color: #13aae1;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: #555;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out 0s;
+}
+a:hover {
+  color: #13aae1;
+  text-decoration: none;
+}
+
+#services i {
+  font-size: 4rem;
+  min-width: 100px;
+}
+#services i,
+#services span {
+  vertical-align: middle;
+  color: #555;
+}
+
+.navbar-brand {
+  max-width: 250px;
+}
+
+.main-bg {
+  background: #6996cd;
+}
+
+.main-text {
+  color: #555;
+}
+
+.footer {
+  background: #6cc7bf;
+  color: #fff;
+}
+
+#about {
+  background-image: url("/images/bg_home.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-item {
+    padding: 0.5rem 0;
+  }
+}

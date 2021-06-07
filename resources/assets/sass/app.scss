@@ -1,0 +1,66 @@
+@import 'variables.scss';
+@import 'functions.scss';
+* {
+    font-family: 'Open Sans', sans-serif;
+    color: $grey;
+}
+
+h4 {
+    font-weight: 600;
+    color: $main1;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: $grey;
+    text-decoration: none;
+    @include transition_ease(0.3s);
+    &:hover {
+        color: $main1;
+        text-decoration: none;
+    }
+}
+
+#services {
+    i {
+        font-size: 4rem;
+        min-width: 100px;
+    }
+    i,
+    span {
+        vertical-align: middle;
+        color: $grey;
+    }
+}
+
+.navbar-brand {
+    max-width: 250px;
+}
+
+.main-bg {
+    background: $main3;
+}
+
+.main-text {
+    color: $grey;
+}
+
+.footer {
+    background: $main2;
+    color: $white;
+}
+
+#about {
+    background-image: url('/images/bg_home.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-item {
+        padding: .5rem 0;
+    }
+}

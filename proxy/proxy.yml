@@ -1,0 +1,21 @@
+version: '3.5'
+
+services:
+  proxy:
+    image: neilpang/nginx-proxy
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+      - ./proxy/certs:/etc/nginx/certs
+      - ./proxy/acme:/acmecerts
+      - ./htpasswd:/etc/nginx/htpasswd
+      - ./proxy/conf.d:/etc/nginx/conf.d
+    networks:
+      proxy_net:
+    restart: always
+
+networks:
+  proxy_net:
+    name: web_proxy
